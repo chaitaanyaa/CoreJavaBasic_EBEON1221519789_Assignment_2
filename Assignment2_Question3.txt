@@ -11,7 +11,7 @@ import java.util.Scanner;
 public class Palindrome { 
 		 public static void main(String args[]){  
 			 
-			 int arraySize;
+		     int arraySize;
 		     Scanner sc = new Scanner(System.in);
 		     System.out.println("Enter the number of array elements:");
 		     arraySize = sc.nextInt();
@@ -23,12 +23,7 @@ public class Palindrome {
 		     {
 		    	System.out.print("Enter ["+i+"]th Array Elements :");
 		    	 arrayElemnts[i]=sc.nextInt();
-		     }
-		    
-		    System.out.println("\n");
-		    System.out.println("Elements Inserted:");
-		    System.out.println(Arrays.toString(arrayElemnts));
-		    
+		     }		    
 		    int j=arrayElemnts.length-1;
 		     for (int i = 0; i <arrayElemnts.length; i++,j--)
 		     {
@@ -74,9 +69,6 @@ Enter [2]th Array Elements :13
 Enter [3]th Array Elements :13
 Enter [4]th Array Elements :11
 
-
-Elements Inserted:
-[12, 11, 13, 13, 11]
 Not Palindrome Array Elements
 [12, 11, 13, 13, 11]
 _______________________________________________________________________
