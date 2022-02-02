@@ -1,0 +1,68 @@
+Question 2: Follow naming convention rule
+	
+	- Write a program to find the sum and product of all elements of an array.
+
+-Ans
+
+package arrayOperations;
+
+import java.util.Arrays;
+import java.util.Scanner;
+
+public class Sum_Product {
+
+   public static void main(String args[]){
+
+	   {
+	         int a[], sum = 0, product = 1,num;
+	         Scanner in = new Scanner(System.in);
+	         System.out.println("Enter the number of array elements:");
+	         num = in.nextInt();
+	         a = new int[num];
+	         System.out.println("Enter the array elements: ");
+	         for (int i = 0; i < num; i++)
+	         {
+	             System.out.println("Enter the "+(i+1)+" element:");
+	             a[i] = in.nextInt();
+	         }
+	         for (int i = 0; i < num; i++)
+	         {
+	             sum = sum + a[i];
+	             product = product * a[i];
+	         }
+	         
+	         System.out.println("Sum of array elements is: "+sum);
+	         System.out.println("Product of array elements is: "+product);
+	     }
+	 }
+}
+
+----------------------------------------------------------------------------------------------
+OUTPUT
+
+Enter the number of array elements:
+10
+Enter the array elements: 
+Enter the 1 element:
+1
+Enter the 2 element:
+2
+Enter the 3 element:
+3
+Enter the 4 element:
+4
+Enter the 5 element:
+5
+Enter the 6 element:
+6
+Enter the 7 element:
+7
+Enter the 8 element:
+8
+Enter the 9 element:
+9
+Enter the 10 element:
+10
+Sum of array elements is: 55
+Product of array elements is: 3628800
+_______________________________________________________________________
